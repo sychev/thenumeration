@@ -13,11 +13,6 @@ body
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
 
-@media (prefers-color-scheme: dark)
-  body
-    background: $dark
-    color: $light
-
 h1, h2, h3, h4, h5, h6
   font-weight: $heading-weight
 
@@ -30,7 +25,7 @@ a
   &:hover
     text-decoration: underline
 
-header a, footer a, aside a
+header a, footer a
   color: inherit
 
 header time
@@ -41,7 +36,7 @@ hr
   margin: 2em 0
 
 article:not(:last-of-type)
-  border-bottom: 1px solid reduce(20)
+  border-bottom: 1px solid reduce(12)
 
 blockquote
   background: reduce(6)
