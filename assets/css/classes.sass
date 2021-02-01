@@ -3,6 +3,9 @@
 
 @import index, highlight
 
+.title
+  font-size: 1.4em
+
 .archive
   font-size: 1.1em
 
@@ -11,23 +14,9 @@
   min-width: 10ch
   margin: 0 .2em
 
-.categories
-  color: $link-color
-  margin-bottom: .15em
+{% if site.external %}
 
-.title
-  font-size: 1.4em
-
-{% if site.sidebar %}
-
-.hidden
-  display: none
-
-{% endif %}
-
-{% if site.sidebar or site.show_social %}
-
-.icons svg
+.icon
   height: 1em
   width: 1em
   fill: currentColor
@@ -35,7 +24,7 @@
   vertical-align: middle
   margin-bottom: .15em
 
-footer.icons a:hover svg
+a:hover .icon
   color: reduce(100)
 
 {% endif %}
@@ -49,30 +38,11 @@ footer.icons a:hover svg
   border-radius: 2px
   border: 1.5px solid $link-color
   padding: .4em .8em
-  transition: .2s
+  transition: .2s background, .2s color
 
 .more a:hover
   color: #fff
   background: $link-color
   text-decoration: inherit
-
-{% endif %}
-
-{% if site.show_related %}
-
-.related div
-  flex: 1 0 15em
-
-.related span
-  display: block
-  color: reduce(100)
-
-.related a
-  font-size: 1.2em
-  font-weight: bold
-
-@media (min-width: 30em)
-  .next
-    text-align: right
 
 {% endif %}
