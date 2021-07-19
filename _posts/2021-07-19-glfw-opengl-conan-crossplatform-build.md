@@ -3,6 +3,7 @@ title:  "GLFW + OpenGL + Conan crossplatform build"
 mathjax: true
 layout: post
 categories: media
+comments: true
 ---
 
 With [Conan](https://conan.io/) it's easy to create simple crossplatform project for OpenGL with GLFW as windowing API. This first article still in production.
@@ -24,3 +25,6 @@ cd ..
 
 {% endhighlight %}
 
+<!--
+rougify list
+-->
